@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="TestingSystem.UserControls.RawAnswer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TestingSystem.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="360">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="textBox" AcceptsReturn="True" Grid.Column="0" Width="310" HorizontalAlignment="Left" Margin="0 10 10 10" AcceptsTab="True" Text="{Binding Text}"/>
+        <CheckBox x:Name="checkBox" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="{Binding IsRight}"/>
+    </Grid>
+</UserControl>
